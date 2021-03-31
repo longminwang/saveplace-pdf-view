@@ -103,7 +103,7 @@ If the buffer being visited is not in `pdf-view-mode' or
 ARGS."
   (cond ((derived-mode-p 'pdf-view-mode)
          (saveplace-pdf-view-find-file 'pdf-view-bookmark
-                                       #'pdf-view-bookmark-jump))
+                                       #'bookmark-jump))
         ((derived-mode-p 'doc-view-mode)
          (saveplace-pdf-view-find-file 'doc-view-bookmark
                                        #'bookmark-jump))
